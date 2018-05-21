@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="com.softwares.pantones.sarincafe.SplashActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="400sp"
+        android:layout_height="400sp"
+        android:foregroundGravity="center"
+        app:srcCompat="@mipmap/sarin_cafe_logo_foreground" />
+
+    <TextView
+        android:id="@+id/splash_tag_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below = "@id/imageView2"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:text="@string/cafe_tag_line"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/splash_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below = "@id/splash_tag_line"
+        android:layout_marginTop="40sp"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:text="@string/cafe_address"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+</RelativeLayout>
